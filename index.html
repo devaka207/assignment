@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    div {text-align: center;}
+  </style>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facility Booking</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+  <div>
+    <label for="checkin-date">Check-in Time</label>
+    <input type="datetime-local" name="input-time" id="start-time" min="2020-10-26T10:00" max="2020-10-26T23:59">
+  </div>
+    <label for="checkout-date">Check-out Time</label>
+    <input type="datetime-local" name="output-time" id="end-time" min="2020-10-26T10:00" max="2020-10-26T23:59">
+  </div>
+    <select id="facility" onchange="button.onclick=0">
+      <option value="club" selected>Clubhouse</option>
+      <option value="court">TennisCourt</option>
+    </select>
+    <button id="clickme" onclick="myFunction()">Book The Slot</button>
+  
+  <div>
+  </div>
+  <div>
+    <input type="text" id="total-hours" placeholder="Total Hours">
+    <input type="text" id="totalprice" placeholder="Total Price">
+  </div>
+  </html>
